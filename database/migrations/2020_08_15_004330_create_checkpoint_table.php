@@ -19,7 +19,7 @@ class CreateCheckpointTable extends Migration
             $table->string("subcat");
             $table->string("checkpoint");
             $table->string("code")->nullable();
-            $table->string("comment")->nullable();
+            $table->text("comment")->nullable();
             $table->unsignedBigInteger("site_id");
             
             //$table->index(['site_id']);
