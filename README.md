@@ -17,12 +17,12 @@
 ### Altere no novo arquivo .env a versão do mysql para a 5.7, alterando a diretiva MYSQL_VERSION. A diretiva deverá ficar como abaixo
 
     # MYSQL_VERSION=5.7
-### Na mesma pasta onde foi clonado o laradock, clone o projeto POC-Vestas
+### Na mesma pasta onde foi clonado o laradock, clone o projeto POC-Filipe
 
-    # git clone https://github.com/xeninhu/POC-Vestas.git POC-Vestas/
+    # git clone https://github.com/xeninhu/POC-Filipe.git POC-Filipe/
 ### Altere a diretiva APP_CODE_PATH_HOST do arquivo .env apontando a pasta raiz do laradock para a pasta do projeto. A diretiva deverá ficar como abaixo
 
-    APP_CODE_PATH_HOST=../POC-Vestas
+    APP_CODE_PATH_HOST=../POC-Filipe
 ### Entre na pasta do laradock e execute o container. (Certifique-se de que não há nada sendo executado nas portas 80 e 3306).
 
     # docker-compose up -d nginx mysql
@@ -46,7 +46,7 @@
 ### Crie a chave do aplicativo
 
     # php artisan key:generate
-### Acesse o banco de dados mysql e crie uma database chamada poc-vestas.
+### Acesse o banco de dados mysql e crie uma database chamada poc-filipe.
 
     # Basta logar no mysql em localhost. Login: root | Senha: root.
 ### Acesse o sistema pelo navegador e seja feliz :)
